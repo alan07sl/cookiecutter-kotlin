@@ -1,7 +1,7 @@
 {
   "name": "kotlin scaffold",
   "repo_name": "{{ cookiecutter.name | lower | replace(' ', '-') }}",
-  "group": "{{ cookiecutter.package_name }}",
+  "group": "com.alan07sl",
   "version": "0.0.1-SNAPSHOT",
   "package_name": "{{ cookiecutter.group }}.{{ cookiecutter.repo_name | replace('-', '_') }}",
   "package_path": "{{ cookiecutter.package_name | replace('.', '/') }}",
