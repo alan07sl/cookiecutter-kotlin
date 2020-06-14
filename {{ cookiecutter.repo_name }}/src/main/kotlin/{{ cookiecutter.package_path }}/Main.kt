@@ -1,5 +1,5 @@
 package {{ cookiecutter.package_name }}
 
-fun main(args: Array<String>) {
+fun main() {
     println("Hello Kotlin World")
 }
