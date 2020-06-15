@@ -1,2 +1,2 @@
 fixes:
-  - "::kotlin-scaffold/"
+  - "cookiecutter-kotlin::cookiecutter-kotlin/kotlin-scaffold"
