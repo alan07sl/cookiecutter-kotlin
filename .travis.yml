@@ -10,7 +10,8 @@ matrix:
       script:
         - cookiecutter . --no-input
     - language: java
-      jdk: oraclejdk8
+      jdk:
+        - oraclejdk8
       install:
         - pip install cookiecutter
       script:
