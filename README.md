@@ -1,8 +1,9 @@
 # Kotlin Gradle Spark Starter App
 
+[![Build Status](https://travis-ci.org/alan07sl/cookiecutter-kotlin.svg?branch=master)](https://travis-ci.org/alan07sl/cookiecutter-kotlin)
+[![ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
 ![technology Gradle](https://img.shields.io/badge/technology-Gradle-blue.svg)
 [![Kotlin Version](https://img.shields.io/badge/Kotlin-1.3.72-blue.svg)](https://kotlinlang.org)
-[![ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
 
 This is a basic [Kotlin](https://kotlinlang.org/) [Gradle](https://gradle.org/) [Spark](http://sparkjava.com/) web application created with [cookiecutter](https://github.com/cookiecutter/cookiecutter) to be used as a starting point for your project.
 
@@ -20,7 +21,7 @@ $ brew install cookiecutter
 ````
 Or if you need any further explanation on the requirements, following the official installing [instructions](https://cookiecutter.readthedocs.io/en/1.7.2/installation.html).
 
-This template has been tested against cookiecutter 1.3.0.
+This template has been tested against cookiecutter 1.7.2 and python 2.7+ or python 3.5+.
 
 ## Usage
 ````
