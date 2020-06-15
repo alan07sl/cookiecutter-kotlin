@@ -27,4 +27,4 @@ jobs:
         - ./gradlew check
         - ./gradlew jacocoTestReport
       after_success:
-        - bash <(curl -s https://codecov.io/bash) -d -p '/home/travis/build/alan07sl/cookiecutter-kotlin/kotlin-scaffold'
+        - bash <(curl -s https://codecov.io/bash) -R '/home/travis/build/alan07sl/cookiecutter-kotlin/kotlin-scaffold'
