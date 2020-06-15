@@ -1,5 +1,7 @@
 # Config file for automatic testing at travis-ci.org
-matrix:
+os: linux
+dist: xenial
+jobs:
   include:
     - language: python
       python:
@@ -24,7 +26,6 @@ matrix:
         - cd ./kotlin-scaffold
         - ./gradlew check
         - ./gradlew jacocoTestReport
-      after_script:
         - rm -rf '{{ cookiecutter.repo_name }}'
       after_success:
         - bash <(curl -s https://codecov.io/bash)
