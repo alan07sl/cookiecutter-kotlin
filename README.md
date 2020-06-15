@@ -20,7 +20,7 @@ $ brew install cookiecutter
 ````
 Or if you need any further explanation on the requirements, following the official installing [instructions](https://cookiecutter.readthedocs.io/en/1.7.2/installation.html).
 
-This template has been tested against cookiecutter 1.3.0.
+This template has been tested against cookiecutter 1.7.2.
 
 ## Usage
 ````
