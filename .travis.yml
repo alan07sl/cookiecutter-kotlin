@@ -1,15 +1,23 @@
 # Config file for automatic testing at travis-ci.org
-language: python
-python:
-  - 2.7
-  - 3.5
-install:
-  - pip install cookiecutter
-script:
-  - cookiecutter . --no-input
-  - chmod +x ./kotlin-scaffold/gradlew
-  - cd ./kotlin-scaffold
-  - ./gradlew check
-  - ./gradlew jacocoTestReport
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+matrix:
+  include:
+    - language: python
+      python:
+        - 2.7
+        - 3.5
+      install:
+        - pip install cookiecutter
+      script:
+        - cookiecutter . --no-input
+    - language: java
+      jdk: oraclejdk8
+      install:
+        - pip install cookiecutter
+      script:
+        - cookiecutter . --no-input
+        - chmod +x ./kotlin-scaffold/gradlew
+        - cd ./kotlin-scaffold
+        - ./gradlew check
+        - ./gradlew jacocoTestReport
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
