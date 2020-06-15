@@ -8,7 +8,8 @@ install:
 script:
   - cookiecutter . --no-input
   - chmod +x ./kotlin-scaffold/gradlew
-  - ./kotlin-scaffold/gradlew check
-  - ./kotlin-scaffold/gradlew codeCoverageReport
+  - cd ./kotlin-scaffold
+  - ./gradlew check
+  - ./gradlew codeCoverageReport
 after_success:
   - bash <(curl -s https://codecov.io/bash)
